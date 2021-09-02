@@ -17,10 +17,11 @@ class MainActivity : AppCompatActivity() {
         changePhoneNumBtn.setOnClickListener {
 
             val myIntent = Intent(this, Input_PhoneNum_Activity::class.java)
+            myIntent.putExtra("number", phoneNumTxt.text.toString())
             startActivityForResult(myIntent, REQUEST_FOR_PHONENUM)
 
-        }
 
+        }
 
         dialBtn.setOnClickListener {
 
@@ -32,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(dialIntent)
 
         }
-
 
 
     }

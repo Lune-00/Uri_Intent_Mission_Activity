@@ -10,6 +10,9 @@ class Input_PhoneNum_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input_phone_num)
 
+        val myIntent2 = intent.getStringExtra("number")
+        phoneNumEdt.hint = myIntent2
+
 
         okBtn.setOnClickListener {
 

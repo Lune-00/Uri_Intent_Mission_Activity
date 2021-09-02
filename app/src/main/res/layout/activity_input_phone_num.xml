@@ -12,6 +12,8 @@
         android:id="@+id/phoneNumEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:singleLine="true"
         android:hint="새로운 전화번호를 입력하세요."/>
 
     <Button
